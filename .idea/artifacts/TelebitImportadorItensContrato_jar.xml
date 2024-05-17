@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TelebitImportadorItensContrato:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TelebitImportadorItensContrato_jar</output-path>
+    <root id="archive" name="TelebitImportadorItensContrato.jar">
+      <element id="module-output" name="TelebitImportadorItensContrato" />
+    </root>
+  </artifact>
+</component>
