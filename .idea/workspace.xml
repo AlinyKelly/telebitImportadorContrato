@@ -9,25 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa4985c9-79fb-444c-bfd8-bf4ec8419fac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TelebitImportadorItensContrato_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Bibliotecas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TelebitImportadorItensContrato.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/utils-snk-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/botoes/ImportarItensContrato.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/botoes/InserirItensContrato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilitarios/DiversosKT.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilitarios/resources/getKeys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilitarios/resources/getPropertyFromObject.js" afterDir="false" />
+    <list default="true" id="fa4985c9-79fb-444c-bfd8-bf4ec8419fac" name="Changes" comment="Commit 1 - Desenvolvimento do Importador de Itens do Contrato">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/botoes/ImportarItensContrato.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/botoes/ImportarItensContrato.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/botoes/InserirItensContrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/botoes/InserirItensContrato.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,28 +30,40 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AlinyKelly&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AlinyKelly/telebitImportadorContrato.git&quot;,
+    &quot;accountId&quot;: &quot;9a0ec349-e104-44a0-95a0-42965c16a884&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2gbAC4rU7LyI8JDWq2zZLDm0zp3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/DevSankhya/IdeaProjects/TelebitImportadorItensContrato",
-    "onboarding.tips.debug.path": "C:/Users/DevSankhya/IdeaProjects/TelebitImportadorItensContrato/src/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DevSankhya/IdeaProjects/TelebitImportadorItensContrato&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/DevSankhya/IdeaProjects/TelebitImportadorItensContrato/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DevSankhya\IdeaProjects\TelebitImportadorItensContrato" />
@@ -82,7 +79,20 @@
       <option name="presentableId" value="Default" />
       <updated>1715955774463</updated>
     </task>
+    <task id="LOCAL-00001" summary="Commit 1 - Desenvolvimento do Importador de Itens do Contrato">
+      <option name="closed" value="true" />
+      <created>1715981798164</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715981798164</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit 1 - Desenvolvimento do Importador de Itens do Contrato" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 1 - Desenvolvimento do Importador de Itens do Contrato" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

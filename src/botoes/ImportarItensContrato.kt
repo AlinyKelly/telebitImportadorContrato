@@ -20,7 +20,7 @@ import java.util.*
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
-class ImportarItensContrato : AcaoRotinaJava{
+class ImportarItensContrato : AcaoRotinaJava {
     @Throws(MGEModelException::class, IOException::class)
     override fun doAction(contextoAcao: ContextoAcao) {
         var hnd: JapeSession.SessionHandle? = null
@@ -63,11 +63,14 @@ class ImportarItensContrato : AcaoRotinaJava{
 
                         val novaLinha = contextoAcao.novaLinha("AD_IMPORTITECONTPRO")
                         novaLinha.setCampo("CODIMPITECONT", codimportacao)
+                        novaLinha.setCampo("REFERENCIA", formatarDataString(json.referencia))
+                        novaLinha.setCampo("CHAVE", json.chave.trim())
                         novaLinha.setCampo("NUMCONTRATO", json.numcontrato.trim())
                         novaLinha.setCampo("CODPROD", json.codprod.trim())
-                        novaLinha.setCampo("NUMUSUARIOS", converterValorMonetario(json.quantidade.trim()))
-                        novaLinha.setCampo("REFERENCIA", json.referencia)
+                        novaLinha.setCampo("REGIONAL", json.regional.trim())
                         novaLinha.setCampo("VALOR", converterValorMonetario(json.valor.trim()))
+                        novaLinha.setCampo("DESCRICAO", json.descricao.trim())
+                        novaLinha.setCampo("NUMUSUARIOS", BigDecimal.ONE)
                         novaLinha.save()
 
                         line = br.readLine()
@@ -104,8 +107,9 @@ class ImportarItensContrato : AcaoRotinaJava{
                 return@filter false
             return@filter true
         }.toTypedArray() // Remove linhas vazias
-        val ret = if (cells.isNotEmpty()) LinhaJson(cells[0], cells[1], cells[2], cells[3], cells[4]) else
-            null
+        val ret =
+            if (cells.isNotEmpty()) LinhaJson(cells[0], cells[1], cells[2], cells[3], cells[4], cells[5], cells[6]) else
+                null
 
         if (ret == null) {
             throw Exception("Erro ao processar a linha: $linha")
@@ -164,11 +168,35 @@ class ImportarItensContrato : AcaoRotinaJava{
         return Timestamp(System.currentTimeMillis())
     }
 
+    fun formatarDataString(originalDateStr: String): Timestamp? {
+        // Formato original da data
+        val originalFormat = SimpleDateFormat("M/dd/yyyy", Locale.US)
+        // Novo formato desejado
+        val newFormat = SimpleDateFormat("dd/MM/yyyy", Locale.US)
+
+        // Parse da data original
+        val date: Date? = originalFormat.parse(originalDateStr)
+
+        return if (date != null) {
+            // Formatação da data para o novo formato (string)
+            val formattedDateStr = newFormat.format(date)
+            // Parse da string formatada para um Date
+            val formattedDate: Date? = newFormat.parse(formattedDateStr)
+            // Conversão do Date para Timestamp
+            formattedDate?.let { Timestamp(it.time) }
+        } else {
+            null // Retorna null se a data original for inválida
+        }
+
+    }
+
     data class LinhaJson(
+        val referencia: String,
+        val chave: String,
         val numcontrato: String,
         val codprod: String,
-        val quantidade: String,
-        val referencia: String,
-        val valor: String
+        val regional: String,
+        val valor: String,
+        val descricao: String
     )
 }
