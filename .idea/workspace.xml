@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa4985c9-79fb-444c-bfd8-bf4ec8419fac" name="Changes" comment="Commit 3 - Ajustes para inserir os itens no contrato.">
+    <list default="true" id="fa4985c9-79fb-444c-bfd8-bf4ec8419fac" name="Changes" comment="Commit 4 - Corrigir o erro de item já inserido.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/botoes/ImportarItensContrato.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/botoes/ImportarItensContrato.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/botoes/InserirItensContrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/botoes/InserirItensContrato.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,14 +103,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719507355256</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit 4 - Corrigir o erro de item já inserido.">
+      <option name="closed" value="true" />
+      <created>1719522095349</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719522095349</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1 - Desenvolvimento do Importador de Itens do Contrato" />
     <MESSAGE value="Commit 2 - Ajustes para criação dos campos Regional e Chave, adaptação das planilha de importação" />
     <MESSAGE value="Commit 3 - Ajustes para inserir os itens no contrato." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 3 - Ajustes para inserir os itens no contrato." />
+    <MESSAGE value="Commit 4 - Corrigir o erro de item já inserido." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 4 - Corrigir o erro de item já inserido." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

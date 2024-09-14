@@ -61,12 +61,17 @@ class ImportarItensContrato : AcaoRotinaJava {
                         val json = trataLinha(line)
                         ultimaLinhaJson = json
 
+                        val codprod = json.codprod.trim().toBigDecimal()
+                        val buscarServProd = retornaVO("Servico", "CODPROD = $codprod") ?: retornaVO("Produto", "CODPROD = $codprod")
+                        val descricao = buscarServProd?.asString("AD_DESCRDET")
+
                         val novaLinha = contextoAcao.novaLinha("AD_IMPORTITECONTPRO")
                         novaLinha.setCampo("CODIMPITECONT", codimportacao)
                         novaLinha.setCampo("REFERENCIA", formatarDataString(json.referencia))
                         novaLinha.setCampo("CHAVE", json.chave.trim())
                         novaLinha.setCampo("NUMCONTRATO", json.numcontrato.trim())
                         novaLinha.setCampo("CODPROD", json.codprod.trim())
+                        novaLinha.setCampo("DESCRDET", descricao)
                         novaLinha.setCampo("REGIONAL", json.regional.trim())
                         novaLinha.setCampo("VALOR", converterValorMonetario(json.valor.trim()))
                         novaLinha.setCampo("DESCRICAO", json.descricao.trim())

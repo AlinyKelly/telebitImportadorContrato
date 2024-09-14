@@ -39,6 +39,7 @@ public class InserirItensContrato implements AcaoRotinaJava {
                         JapeHelper.CreateNewLine newProdServContrato = new JapeHelper.CreateNewLine("ProdutoServicoContrato");
                         newProdServContrato.set("NUMCONTRATO", nroContrato);
                         newProdServContrato.set("CODPROD", vo.asBigDecimalOrZero("CODPROD"));
+                        newProdServContrato.set("AD_DESCRDET", vo.asString("AD_DESCRDET"));
                         newProdServContrato.set("NUMUSUARIOS", vo.asBigDecimalOrZero("NUMUSUARIOS"));
                         newProdServContrato.set("AD_CHAVELPU", vo.asString("CHAVE"));
                         newProdServContrato.set("AD_REGIONAL", vo.asString("REGIONAL"));
